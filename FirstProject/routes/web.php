@@ -15,3 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('pages', 'Pagecontroller@show');
+Route::post('pagesstore', 'Pagecontroller@store');
