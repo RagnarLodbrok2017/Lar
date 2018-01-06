@@ -21,4 +21,9 @@ class Pagecontroller extends Controller
 		$page->save();
 		return back();
 	}
+        public function delete(Page $page)
+        {
+            $page->delete();
+            return back();
+        }
 }

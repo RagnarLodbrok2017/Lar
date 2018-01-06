@@ -9,6 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -65,7 +66,9 @@
         </style>
     </head>
     <body>
+        <div class="container">
         @yield('content')
+        </div>
             <div class="content">
                 <div class="title m-b-md">
                     Welcome to My Site<br>

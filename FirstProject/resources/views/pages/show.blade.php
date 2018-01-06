@@ -9,7 +9,7 @@
 		{{ $page->title }}
 	</div>
 	<div class="col-xs-4">
-		<div><a href="#" class="btn btn-danger pull-right">Delete</a></div>
+		<div><a href="page/{{$page->id}}/delete" class="btn btn-danger pull-right">Delete</a></div>
 	</div>
 </div>
 @endforeach
