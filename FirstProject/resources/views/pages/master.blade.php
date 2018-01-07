@@ -66,13 +66,13 @@
         </style>
     </head>
     <body>
+      <div class="content">
+          <div class="title m-b-md">
+              Welcome to My Site<br>
+          </div>
+      </div>
         <div class="container">
         @yield('content')
         </div>
-            <div class="content">
-                <div class="title m-b-md">
-                    Welcome to My Site<br>
-                </div>
-            </div>
     </body>
 </html>

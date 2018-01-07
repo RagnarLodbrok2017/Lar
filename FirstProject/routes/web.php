@@ -15,5 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('pages', 'Pagecontroller@show');
+Route::get('pages/{page}', 'Pagecontroller@showOnePage');
 Route::post('pagesstore', 'Pagecontroller@store');
 Route::get('page/{page}/delete', 'Pagecontroller@delete');
+Route::post('notestore', 'Notecontroller@store');

@@ -21,9 +21,13 @@ class Pagecontroller extends Controller
 		$page->save();
 		return back();
 	}
-        public function delete(Page $page)
-        {
-            $page->delete();
-            return back();
-        }
+	public function delete(Page $page)
+	{
+		$page->delete();
+		return back();
+	}
+	public function showOnePage(Page $page)
+	{
+		return View('pages.onepage', compact('page'));
+	}
 }
