@@ -15,7 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('pages', 'Pagecontroller@show');
-Route::get('pages/{page}', 'Pagecontroller@showOnePage');
 Route::post('pagesstore', 'Pagecontroller@store');
-Route::get('page/{page}/delete', 'Pagecontroller@delete');
-Route::post('notestore', 'Notecontroller@store');
+Route::get('pages/{page}/delete', 'Pagecontroller@delete');
+Route::get('pages/{page}', 'Pagecontroller@showOnePage');
+Route::post('pages/{page}/notestore', 'Notecontroller@store');
+Route::get('pages/{page}/delete', 'Pagecontroller@delete');
+Route::get('notes/{note}/edit', 'Notecontroller@edit');
+Route::post('notes/{note}/update', 'Notecontroller@update');
+Route::get('notes/{note}/delete', 'Notecontroller@delete');
